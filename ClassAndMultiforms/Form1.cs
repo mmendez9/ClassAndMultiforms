@@ -16,5 +16,25 @@ namespace ClassAndMultiforms
         {
             InitializeComponent();
         }
+
+        private void btnDog_Click(object sender, EventArgs e)
+        {
+            Pet myDog = new Pet();
+            myDog.Name = "Scrapy";
+            myDog.Age = 2;
+            MessageBox.Show("Your dog's name is " + myDog.Name + "\n" +
+                "Your Dog's age is " + myDog.Age + " year(s)", "Pet Info",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnCat_Click(object sender, EventArgs e)
+        {
+            Pet myCat = new Pet();
+            myCat.Name = "Fluffy";
+            myCat.Age = 1;
+            MessageBox.Show("Your cat's name is " + myCat.Name + "\n" + 
+                "Your Cat's age is " + myCat.Age + " year(s)", "Pet Info",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
